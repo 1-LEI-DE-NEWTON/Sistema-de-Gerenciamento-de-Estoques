@@ -1,9 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-
-namespace Sistema_de_Gerenciamento_de_Estoques
+namespace GerenciadorDeEstoque
 {
+    public class Produto
+    {
+        private List<Produto> produtos;
+        
+        public string Nome { get; set; }
+        public int Quantidade { get; set; }
+        public double Preco { get; set; }
+
+        public Produto(string nome, int quantidade, double preco)
+        {
+            Nome = nome;
+            Quantidade = quantidade;
+            Preco = preco;
+        }
+    }
     public class Models
     {
         private List<Produto> produtos;
@@ -15,6 +32,7 @@ namespace Sistema_de_Gerenciamento_de_Estoques
 
         public void AdicionarProduto(Produto produto)
         {
+            var produtos = new List<Produto>();
             produtos.Add(produto);
         }
 
@@ -28,29 +46,12 @@ namespace Sistema_de_Gerenciamento_de_Estoques
             produtos.Remove(produto);
         }
 
-        public void RemoverProduto(int index)
+        public void EditarProduto(Produto produto)
         {
-            produtos.RemoveAt(index);
-        }
-
-        public void RemoverProduto(string nome)
-        {
-            var produto = produtos.FirstOrDefault(p => p.Nome == nome);
-            produtos.Remove(produto);
-        }
-    }
-
-    public class Produto
-    {
-        public string Nome { get; set; }
-        public int Quantidade { get; set; }
-        public double Preco { get; set; }
-
-        public Produto(string nome, int quantidade, double preco)
-        {
-            Nome = nome;
-            Quantidade = quantidade;
-            Preco = preco;
+            var produtoExistente = produtos.FirstOrDefault(p => p.Nome == produto.Nome);
+            produtoExistente.Nome = produto.Nome;
+            produtoExistente.Quantidade = produto.Quantidade;
+            produtoExistente.Preco = produto.Preco;
         }
     }
 }

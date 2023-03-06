@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Sistema_de_Gerenciamento_de_Estoques
+namespace GerenciadorDeEstoques
 {
     /// <summary>
     /// Interaction logic for App.xaml

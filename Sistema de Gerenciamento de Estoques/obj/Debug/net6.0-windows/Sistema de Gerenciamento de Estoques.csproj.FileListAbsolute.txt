@@ -19,3 +19,11 @@ C:\Users\TKFir\source\repos\Sistema de Gerenciamento de Estoques\Sistema de Gere
 C:\Users\TKFir\source\repos\Sistema de Gerenciamento de Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.pdb
 C:\Users\TKFir\source\repos\Sistema de Gerenciamento de Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.genruntimeconfig.cache
 C:\Users\TKFir\source\repos\Sistema de Gerenciamento de Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\ref\Sistema de Gerenciamento de Estoques.dll
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.csproj.AssemblyReference.cache
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques_MarkupCompile.cache
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques_MarkupCompile.lref
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.dll
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\refint\Sistema de Gerenciamento de Estoques.dll
+C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.pdb

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TKFir\\source\\repos\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques.csproj",
+      "projectUniqueName": "C:\\Users\\TKFir\\Source\\Repos\\Sistema-de-Gerenciamento-de-Estoques\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques.csproj",
       "projectName": "Sistema de Gerenciamento de Estoques",
-      "projectPath": "C:\\Users\\TKFir\\source\\repos\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques.csproj",
+      "projectPath": "C:\\Users\\TKFir\\Source\\Repos\\Sistema-de-Gerenciamento-de-Estoques\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques.csproj",
       "packagesPath": "C:\\Users\\TKFir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TKFir\\source\\repos\\Sistema de Gerenciamento de Estoques\\Sistema de Gerenciamento de Estoques\\obj\\",
+      "outputPath": "C:\\Users\\TKFir\\Source\\Repos\\Sistema-de-Gerenciamento-de-Estoques\\Sistema de Gerenciamento de Estoques\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

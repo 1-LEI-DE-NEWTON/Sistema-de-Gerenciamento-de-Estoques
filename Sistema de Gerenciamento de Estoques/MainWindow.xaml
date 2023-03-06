@@ -5,35 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GerenciadorDeEstoque"
         mc:Ignorable="d"
-        Title="Gerenciador de Estoque" Height="450" Width="800">
+        Title="Gerenciador de Estoque" Height="450" Width="800"
+        WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="3*"/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Content="Nome:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtNome" Margin="10"/>
-        <Label Grid.Row="1" Grid.Column="0" Content="Quantidade:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtQuantidade" Margin="10"/>
-        <Label Grid.Row="2" Grid.Column="0" Content="Preço:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-        <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtPreco" Margin="10"/>
-        <Button Grid.Row="3" Grid.ColumnSpan="2" Content="Adicionar Produto" Margin="10" Click="AdicionarProduto"/>
-        <DataGrid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="False" CanUserAddRows="False" ItemsSource="{Binding Produtos}">
-        <Button Content="Remover Produto" Grid.Row="3" Grid.Column="1" Margin="10" Click="RemoverProduto_Click"/>
-        
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
-                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}"/>
-                <DataGridTextColumn Header="Preço" Binding="{Binding Preco}"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="1" FontSize="24" FontWeight="Bold" Margin="0 16" Text="Bem-vindo ao Gerenciador de Estoque!"/>
+        </Grid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#FFE5E5E5">
+            <Button Content="Adicionar Produto" Click="AdicionarProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
+            <!--<Button Content="Atualizar Produto" Click="AtualizarProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
+            <Button Content="Remover Produto" Click="RemoverProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
+            <Button Content="Listar Produtos" Click="ListarProdutos_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>-->
+        </StackPanel>
+
+        <Frame Grid.Row="2" x:Name="frame"/>
     </Grid>
 </Window>

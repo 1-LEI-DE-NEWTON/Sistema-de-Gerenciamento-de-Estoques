@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GerenciadorDeEstoque
 {
@@ -12,9 +9,9 @@ namespace GerenciadorDeEstoque
         
         public string Nome { get; set; }
         public int Quantidade { get; set; }
-        public double Preco { get; set; }
+        public decimal Preco { get; set; }
 
-        public Produto(string nome, int quantidade, double preco)
+        public Produto(string nome, int quantidade, decimal preco)
         {
             Nome = nome;
             Quantidade = quantidade;

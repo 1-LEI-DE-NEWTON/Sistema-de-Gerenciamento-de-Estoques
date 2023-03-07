@@ -8,7 +8,6 @@ namespace GerenciadorDeEstoque
 {
     public partial class MainWindow : Window, INotifyPropertyChanged
     {
-        private Models models;
         
         private List<Produto> _produtos;
         public List<Produto> Produtos

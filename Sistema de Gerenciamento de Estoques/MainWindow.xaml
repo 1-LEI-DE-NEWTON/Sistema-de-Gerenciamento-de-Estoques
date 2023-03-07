@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GerenciadorDeEstoque"
         mc:Ignorable="d"
-        Title="Gerenciador de Estoque" Height="450" Width="800"
+        Title="Gerenciador de Estoque" Height="288" Width="581"
         WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
@@ -25,11 +25,10 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#FFE5E5E5">
             <Button Content="Adicionar Produto" Click="AdicionarProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
+            <Button Content="Listar Produtos" Click="ListarProdutos_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
             <!--<Button Content="Atualizar Produto" Click="AtualizarProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
             <Button Content="Remover Produto" Click="RemoverProduto_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>
-            <Button Content="Listar Produtos" Click="ListarProdutos_Click" Background="#FFB5D0F0" BorderThickness="0" Foreground="White" FontSize="18" Padding="24 12"/>-->
+            -->
         </StackPanel>
-
-        <Frame Grid.Row="2" x:Name="frame"/>
     </Grid>
 </Window>

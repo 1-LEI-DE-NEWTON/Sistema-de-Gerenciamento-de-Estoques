@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -9,6 +10,7 @@ namespace GerenciadorDeEstoque
         public ListarProdutos()
         {
             InitializeComponent();
+            List<Produto> produtos = new List<Produto>();
         }
     }
 }

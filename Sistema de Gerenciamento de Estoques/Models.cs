@@ -4,12 +4,11 @@ using System.Linq;
 namespace GerenciadorDeEstoque
 {
     public class Produto
-    {
-        private List<Produto> produtos;
-        
+    {        
         public string Nome { get; set; }
         public int Quantidade { get; set; }
         public decimal Preco { get; set; }
+        public int Id { get; set; }
 
         public Produto(string nome, int quantidade, decimal preco)
         {

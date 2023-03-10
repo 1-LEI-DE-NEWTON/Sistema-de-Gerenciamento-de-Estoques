@@ -43,3 +43,40 @@ C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gere
 C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.pdb
 C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.genruntimeconfig.cache
 C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\ref\Sistema de Gerenciamento de Estoques.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\ListarProdutos.g.cs
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Google.Protobuf.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\K4os.Compression.LZ4.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\K4os.Hash.xxHash.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\MySql.Data.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\ZstdNet.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\comerr64.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\gssapi64.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\k5sprt64.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\krb5_64.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\krbcc64.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\ListarProdutos.baml
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\Sistema de Gerenciamento de Estoques.csproj.CopyComplete
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Humanizer.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\System.Text.Json.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll

@@ -1,4 +1,7 @@
 ﻿using GerenciadorDeEstoque;
+using Sistema_de_Gerenciamento_de_Estoques.Infra.Context;
+using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
+using System;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
@@ -10,8 +13,8 @@ namespace GerenciadorDeEstoques
     /// </summary>
     public partial class AdicionarProdutos : Window
     {
+
         private Models models;
-        private Produto produto;
 
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
@@ -30,8 +33,10 @@ namespace GerenciadorDeEstoques
             //Adiciona o produto na lista de produtos
             var produto = new Produto(txtNome.Text, int.Parse(txtQuantidade.Text), (decimal)double.Parse(txtPreco.Text));
             models.AdicionarProduto(produto);
-            DialogResult = true;
-            //MessageBox.Show("Produto adicionado com sucesso!");
+            //Adiciona o produto ao banco de dados
+            ProdutoDAO.AdicionarProduto(produto);
+            //Limpa os campos
+            txtNome.Text = "";txtQuantidade.Text = "";txtPreco.Text = "";
         }
 
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)

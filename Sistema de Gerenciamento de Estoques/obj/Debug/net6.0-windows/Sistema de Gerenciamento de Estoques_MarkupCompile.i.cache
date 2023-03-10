@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\
 Sistema_de_Gerenciamento_de_Estoques
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\TKFir\Source\Repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\App.xaml
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\App.xaml
 3-1280421798
 
-121121880084
-201-1670655801
+211711288324
+2161473753744
 AdicionarProdutos.xaml;ListarProdutos.xaml;MainWindow.xaml;
 
-True
+False
 

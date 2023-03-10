@@ -21,7 +21,9 @@
                 <ComboBoxItem Content="Preço"/>
             </ComboBox>
             <TextBox x:Name="txtFiltro" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18" Text="Digite aqui para filtrar a lista"/>
+            <!--
             <Button Content="Filtrar" Margin="10,0,0,0" VerticalAlignment="Center" Background="#007acc" Foreground="White" FontSize="18" Click="Filtrar_Click"/>
+            -->
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvwProdutos" Margin="10" FontSize="18">
@@ -34,8 +36,10 @@
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
+                                    <!--
                                     <Button Content="Editar" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Editar_Click"/>
                                     <Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
+                                    -->
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>

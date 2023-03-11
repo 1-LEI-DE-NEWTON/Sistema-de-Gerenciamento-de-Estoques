@@ -1,6 +1,5 @@
 ﻿
 using GerenciadorDeEstoque;
-using GerenciadorDeEstoque.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
 using System.Windows;
 
@@ -23,8 +22,9 @@ namespace Sistema_de_Gerenciamento_de_Estoques
             
             if (produto != null)
             {
-                MessageBoxResult resultado = MessageBox.Show("Produto encontrado! Clique em Sim para editar ou Nao para visualizar " +
-                    "Todos os produtos com esse nome", "Produto encontrado", MessageBoxButton.YesNoCancel);
+                MessageBoxResult resultado = MessageBox.Show("Produto encontrado! Clique em Sim para editar ou Nao " +
+                    "para visualizar todos os produtos com esse nome",
+                    "Produto encontrado", MessageBoxButton.YesNoCancel);
                 
                 if (resultado == MessageBoxResult.Yes)
                 {
@@ -40,7 +40,8 @@ namespace Sistema_de_Gerenciamento_de_Estoques
             }
             else
             {
-                MessageBox.Show("Produto não encontrado!");
+                MessageBox.Show("Produto não encontrado!", "Produto não encontrado",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
                 Close();
             }
         }

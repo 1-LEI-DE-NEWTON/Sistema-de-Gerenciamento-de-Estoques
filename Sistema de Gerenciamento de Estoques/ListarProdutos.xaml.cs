@@ -45,26 +45,23 @@ namespace GerenciadorDeEstoque
                 var produtoSelecionado = (Produto)lvwProdutos.SelectedItem;
                 produtoSelecionado = ProdutoDAO.BuscarProduto(produtoSelecionado);
                 
-                ProdutoDAO.RemoverProduto(produtoSelecionado);
-                PreencherListView();
+                MessageBoxResult resultado = MessageBox.Show("Deseja excluir o produto " + produtoSelecionado.Nome
+                    + "?", "Excluir Produto", MessageBoxButton.YesNo);
+                
+                if (resultado == MessageBoxResult.Yes)
+                {
+                    ProdutoDAO.RemoverProduto(produtoSelecionado);
+                    PreencherListView();
+                }
+                else
+                {
+                    MessageBox.Show("Operação cancelada!");
+                }
             }
             else
             {
                 MessageBox.Show("Selecione um produto para remover!");
             }
-        }
-
-        /*
-        private void Editar_Click(object sender, RoutedEventArgs e)
-        {
-            //Pega o produto selecionado
-            Produto produto = (Produto)lvwProdutos.SelectedItem;
-            //Abre a janela de edição de produtos            
-            var editarProdutos = new EditorProdutos(produto);
-            editarProdutos.ShowDialog();
-            //Atualiza a lista de produtos
-            PreencherListView();
-        }
-        */
+        }       
     }
 }

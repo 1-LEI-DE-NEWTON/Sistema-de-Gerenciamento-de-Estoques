@@ -38,7 +38,6 @@ namespace GerenciadorDeEstoques
             //Limpa os campos
             txtNome.Text = "";txtQuantidade.Text = "";txtPreco.Text = "";
         }
-
         private void BtnCancelar_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;

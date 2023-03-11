@@ -39,7 +39,8 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao listar produtos: " + ex.Message);
+                MessageBox.Show("Erro ao listar produtos: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
                 return null;
             }
         }
@@ -58,12 +59,13 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
 
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Produto adicionado com sucesso!");
+                    MessageBox.Show("Produto adicionado com sucesso!", "Adicionar Produto");
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao adicionar produto: " + ex.Message);
+                MessageBox.Show("Erro ao adicionar produto: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -82,12 +84,14 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
 
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Produto editado com sucesso!");
+                    MessageBox.Show("Produto editado com sucesso!", "Operação realizada com sucesso",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao editar produto: " + ex.Message);
+                MessageBox.Show("Erro ao editar produto: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -120,7 +124,8 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao buscar produto: " + ex.Message);
+                MessageBox.Show("Erro ao buscar produto: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
                 return null;
             }
         }
@@ -137,12 +142,14 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
 
                     command.ExecuteNonQuery();
 
-                    MessageBox.Show("Produto removido com sucesso!");
+                    MessageBox.Show("Produto removido com sucesso!", "Operação realizada com sucesso",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao remover produto: " + ex.Message);
+                MessageBox.Show("Erro ao remover produto: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }        
     }

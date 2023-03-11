@@ -38,21 +38,6 @@ namespace GerenciadorDeEstoque
             var adicionarProdutos = new AdicionarProdutos();
             adicionarProdutos.ShowDialog();
         }
-
-        private void AtualizarProdutos(object sender, RoutedEventArgs e)
-        {
-            Produtos = Produtos.ToList(); // atualiza o DataGrid
-        }
-
-        /*
-        private void RemoverProduto(object sender, RoutedEventArgs e)
-        {
-            var produto = (Produto)dgProdutos.SelectedItem;
-            Produtos.Remove(produto);
-            Produtos = Produtos.ToList(); // atualiza o DataGrid
-        }
-        */
-
         private void ListarProdutos_Click(object sender, RoutedEventArgs e)
         {
             var listarProdutos = new ListarProdutos();

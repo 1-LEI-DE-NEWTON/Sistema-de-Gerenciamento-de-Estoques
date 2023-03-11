@@ -38,6 +38,22 @@ namespace GerenciadorDeEstoque
             }
         }
 
+        private void Excluir_Click(object sender, RoutedEventArgs e)
+        {
+            if (lvwProdutos.SelectedItem != null)
+            {
+                var produtoSelecionado = (Produto)lvwProdutos.SelectedItem;
+                produtoSelecionado = ProdutoDAO.BuscarProduto(produtoSelecionado);
+                
+                ProdutoDAO.RemoverProduto(produtoSelecionado);
+                PreencherListView();
+            }
+            else
+            {
+                MessageBox.Show("Selecione um produto para remover!");
+            }
+        }
+
         /*
         private void Editar_Click(object sender, RoutedEventArgs e)
         {

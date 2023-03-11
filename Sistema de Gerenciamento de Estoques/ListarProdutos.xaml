@@ -36,10 +36,8 @@
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    
                                     <Button Content="Editar" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Editar_Click"/>
-                                    <!--Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
-                                    -->
+                                    <Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>

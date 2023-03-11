@@ -124,5 +124,26 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
                 return null;
             }
         }
+
+        public static void RemoverProduto(Produto produto)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand("DELETE FROM produtos WHERE id = @id", connection);
+                    command.Parameters.AddWithValue("@id", produto.Id);
+
+                    command.ExecuteNonQuery();
+
+                    MessageBox.Show("Produto removido com sucesso!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao remover produto: " + ex.Message);
+            }
+        }        
     }
 }

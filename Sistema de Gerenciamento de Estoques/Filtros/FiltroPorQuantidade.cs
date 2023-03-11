@@ -1,8 +1,6 @@
-﻿using GerenciadorDeEstoque.Filtros;
-using GerenciadorDeEstoque;
-using System.Linq;
+﻿using System.Linq;
 
-namespace Sistema_de_Gerenciamento_de_Estoques.Filtros
+namespace GerenciadorDeEstoque.Filtros
 {
     public class FiltroPorQuantidade : FiltroBase<Produto>
     {

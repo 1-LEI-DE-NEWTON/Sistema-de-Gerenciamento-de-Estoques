@@ -1,6 +1,5 @@
 ﻿using GerenciadorDeEstoque.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques;
-using Sistema_de_Gerenciamento_de_Estoques.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -95,7 +94,7 @@ namespace GerenciadorDeEstoque
                     break;
             }            
             
-            if (txtFiltro.Text != "")
+            if (txtFiltro.Text != "" || txtMaximo.Text != "" || txtMinimo.Text != "")
             {                      
                 switch (filtroEscolhido)
                 {

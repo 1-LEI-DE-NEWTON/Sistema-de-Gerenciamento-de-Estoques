@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows;
 using GerenciadorDeEstoque;
+using GerenciadorDeEstoque.Filtros;
 using MySql.Data.MySqlClient;
 
 namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
@@ -36,6 +38,42 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
                 }
 
                 return produtos;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao listar produtos: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return null;
+            }
+        }
+
+        //Listar Produtos com Filtro
+        public static List<Produto> ListarProdutosComFiltro(FiltroBase<Produto> filtro)
+        {
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM produtos", connection);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var produto = new Produto(
+                                reader.GetString("nome"),
+                                reader.GetInt32("quantidade"),
+                                reader.GetDecimal("preco"));
+
+                            produtos.Add(produto);
+                        }
+                    }
+                }
+
+                return filtro.Aplicar(produtos.AsQueryable()).ToList();
             }
             catch (Exception ex)
             {

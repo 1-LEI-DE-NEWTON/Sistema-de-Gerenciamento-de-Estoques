@@ -3,11 +3,16 @@
 namespace GerenciadorDeEstoque.Filtros;
 public class FiltroPreco : FiltroBase<Produto>
 {
-    public decimal PrecoMinimo { get; set; }
-    public decimal PrecoMaximo { get; set; }
+    private readonly decimal _precoMinimo;
+    private readonly decimal _precoMaximo;
+    public FiltroPreco(decimal PrecoMinimo, decimal PrecoMaximo)
+    {
+        _precoMinimo = PrecoMinimo;
+        _precoMaximo = PrecoMaximo;
+    }
 
     public override IQueryable<Produto> Aplicar(IQueryable<Produto> produtos)
     {
-        return produtos.Where(p => p.Preco >= PrecoMinimo && p.Preco <= PrecoMaximo);
+        return produtos.Where(p => p.Preco >= _precoMinimo && p.Preco <= _precoMaximo);
     }
 }

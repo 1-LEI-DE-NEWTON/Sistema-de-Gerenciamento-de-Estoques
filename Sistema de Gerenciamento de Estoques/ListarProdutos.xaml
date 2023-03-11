@@ -20,10 +20,23 @@
                 <ComboBoxItem Content="Quantidade"/>
                 <ComboBoxItem Content="Preço"/>
             </ComboBox>
-            <TextBox x:Name="txtFiltro" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18" Text="Digite aqui para filtrar a lista"/>
-            <!--
-            <Button Content="Filtrar" Margin="10,0,0,0" VerticalAlignment="Center" Background="#007acc" Foreground="White" FontSize="18" Click="Filtrar_Click"/>
-            -->
+            <TextBox x:Name="txtFiltro" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18"
+                     Style="{StaticResource Estilo_Placeholder}" Tag="Digite aqui o nome para filtrar a lista" 
+                     Visibility="Collapsed" 
+                     />
+            <TextBox x:Name="txtMinimo" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18"
+                        Style="{StaticResource Estilo_Placeholder}" Tag="" 
+                       Visibility="Collapsed" PreviewTextInput="NumberValidationTextBox"/>
+
+            <TextBox x:Name="txtMaximo" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18"
+                        Style="{StaticResource Estilo_Placeholder}" Tag="" 
+                       Visibility="Collapsed" PreviewTextInput="NumberValidationTextBox"/>
+
+
+            <Button Content="Filtrar" Margin="10,0,0,0" VerticalAlignment="Center"
+                    Background="#007acc" Foreground="White" FontSize="18" Click="Filtrar_Click"/>
+
+            
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvwProdutos" Margin="10" FontSize="18">
@@ -32,13 +45,14 @@
                     <GridViewColumn Header="Nome" Width="200" DisplayMemberBinding="{Binding Nome}"/>
                     <GridViewColumn Header="Quantidade" Width="150" DisplayMemberBinding="{Binding Quantidade}"/>
                     <GridViewColumn Header="Preço" Width="150" DisplayMemberBinding="{Binding Preco}"/>
-                    <GridViewColumn Header="Opções" Width="150"/>
-                    <GridViewColumn Header="" Width="Auto">
+                    <GridViewColumn Header="Opções" Width="Auto">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Content="Editar" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Editar_Click"/>
-                                    <Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
+                                    <Button Content="Editar" Margin="5" Background="#007acc"
+                                            Foreground="White" FontSize="14" Click="Editar_Click"/>
+                                    <Button Content="Excluir" Margin="5" Background="#007acc"
+                                            Foreground="White" FontSize="14" Click="Excluir_Click"/>
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>

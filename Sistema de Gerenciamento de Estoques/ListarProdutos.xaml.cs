@@ -115,7 +115,7 @@ namespace GerenciadorDeEstoque
                         
                     case "Quantidade":
                         if (int.TryParse(txtMinimo.Text, out int qntMinima) &&
-                            (int.TryParse(txtMinimo.Text, out int qntMax)))
+                            (int.TryParse(txtMaximo.Text, out int qntMax)))
                         {
                             Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
                                 new FiltroPreco(qntMinima, qntMax)));

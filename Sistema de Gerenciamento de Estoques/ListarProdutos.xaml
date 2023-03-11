@@ -32,6 +32,7 @@
                     <GridViewColumn Header="Nome" Width="200" DisplayMemberBinding="{Binding Nome}"/>
                     <GridViewColumn Header="Quantidade" Width="150" DisplayMemberBinding="{Binding Quantidade}"/>
                     <GridViewColumn Header="Preço" Width="150" DisplayMemberBinding="{Binding Preco}"/>
+                    <GridViewColumn Header="Opções" Width="150"/>
                     <GridViewColumn Header="" Width="Auto">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>

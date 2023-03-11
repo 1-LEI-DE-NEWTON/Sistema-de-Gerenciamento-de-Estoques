@@ -55,7 +55,7 @@ namespace GerenciadorDeEstoque
                 }
                 else
                 {
-                    MessageBox.Show("Operação cancelada!");
+                    MessageBox.Show("Operação cancelada!", "Excluir Produto");
                 }
             }
             else

@@ -77,7 +77,7 @@ namespace GerenciadorDeEstoques {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Sistema de Gerenciamento de Estoques;V1.0.0.0;component/adicionarprodutos.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Sistema de Gerenciamento de Estoques;component/adicionarprodutos.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AdicionarProdutos.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

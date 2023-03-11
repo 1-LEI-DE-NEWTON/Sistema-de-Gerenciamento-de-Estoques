@@ -31,5 +31,10 @@ namespace Sistema_de_Gerenciamento_de_Estoques
             //Fecha a janela
             DialogResult = true;
         }
+
+        private void Cancelar_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+        }
     }
 }

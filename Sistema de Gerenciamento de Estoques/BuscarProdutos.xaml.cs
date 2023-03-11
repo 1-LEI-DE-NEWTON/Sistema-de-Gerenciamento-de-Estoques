@@ -19,20 +19,29 @@ namespace Sistema_de_Gerenciamento_de_Estoques
 
         private void Buscar_Click(object sender, RoutedEventArgs e)
         {
-            //Busca o produto por nome
-            
             var produto = ProdutoDAO.BuscarProdutoPorNome(txtNome.Text);
             
             if (produto != null)
             {
-                MessageBox.Show("Produto encontrado: " + produto.Nome, "Buscar Produto");
-                //Exibe o produto encontrado na pagina de Listar Produtos
-                var janela = new ListarProdutos(produto);
-                janela.ShowDialog();                
+                MessageBoxResult resultado = MessageBox.Show("Produto encontrado! Clique em Sim para editar ou Nao para visualizar " +
+                    "Todos os produtos com esse nome", "Produto encontrado", MessageBoxButton.YesNoCancel);
+                
+                if (resultado == MessageBoxResult.Yes)
+                {
+                    var janela = new EditorProdutos(produto);
+                    janela.ShowDialog();
+                }
+                else if (resultado == MessageBoxResult.No)
+                {
+                    var janela = new ListarProdutos(produto);
+                    janela.ShowDialog();
+                }                
+                Close();
             }
             else
             {
                 MessageBox.Show("Produto não encontrado!");
+                Close();
             }
         }
 

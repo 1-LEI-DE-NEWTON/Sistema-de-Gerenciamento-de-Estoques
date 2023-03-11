@@ -15,7 +15,7 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
             <Label Content="Filtrar por:" VerticalAlignment="Center" FontSize="18"/>
-            <ComboBox x:Name="cbxFiltro" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18">
+            <ComboBox x:Name="cbxFiltro" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18" SelectionChanged="Filtrar_Click">
                 <ComboBoxItem Content="Nome"/>
                 <ComboBoxItem Content="Quantidade"/>
                 <ComboBoxItem Content="Preço"/>
@@ -26,11 +26,11 @@
                      />
             <TextBox x:Name="txtMinimo" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18"
                         Style="{StaticResource Estilo_Placeholder}" Tag="" 
-                       Visibility="Collapsed" PreviewTextInput="NumberValidationTextBox"/>
+                       Visibility="Collapsed" />
 
             <TextBox x:Name="txtMaximo" Margin="10,0,0,0" VerticalAlignment="Center" FontSize="18"
                         Style="{StaticResource Estilo_Placeholder}" Tag="" 
-                       Visibility="Collapsed" PreviewTextInput="NumberValidationTextBox"/>
+                       Visibility="Collapsed" />
 
 
             <Button Content="Filtrar" Margin="10,0,0,0" VerticalAlignment="Center"

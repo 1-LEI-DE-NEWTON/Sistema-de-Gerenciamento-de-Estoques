@@ -1,5 +1,6 @@
 ﻿using GerenciadorDeEstoque.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques;
+using Sistema_de_Gerenciamento_de_Estoques.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -74,37 +75,59 @@ namespace GerenciadorDeEstoque
             {
                 case "Nome":
                     txtFiltro.Visibility = Visibility.Visible;
+                    txtMinimo.Visibility = Visibility.Collapsed;
+                    txtMaximo.Visibility = Visibility.Collapsed;                    
+
                     break;
                 case "Preço":
+                    txtFiltro.Visibility = Visibility.Collapsed;
                     txtMinimo.Visibility = Visibility.Visible;
                     txtMaximo.Visibility = Visibility.Visible;
                     txtMinimo.Tag = "Preço Mínimo";
                     txtMaximo.Tag = "Preço Máximo";
                     break;
                 case "Quantidade":
+                    txtFiltro.Visibility = Visibility.Collapsed;
                     txtMinimo.Visibility = Visibility.Visible;
                     txtMaximo.Visibility = Visibility.Visible;
                     txtMinimo.Tag = "Quantidade Mínima";
                     txtMaximo.Tag = "Quantidade Máxima";
                     break;
-            }
-
+            }            
+            
             if (txtFiltro.Text != "")
             {                      
                 switch (filtroEscolhido)
                 {
                     case "Preço":
-                        Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
-                            new FiltroPorPreco(decimal.Parse(txtFiltro.Text))));
-                        lvwProdutos.ItemsSource = Produtos;
+                        if (decimal.TryParse(txtMinimo.Text, out decimal precoMinimo) &&
+                            decimal.TryParse(txtMaximo.Text, out decimal precoMax))
+                        {
+                            Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
+                                new FiltroPreco(precoMinimo, precoMax)));
+                            lvwProdutos.ItemsSource = Produtos;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Digite um valor válido!", "Filtro por Preço",
+                                MessageBoxButton.OK, MessageBoxImage.Error);
+                        }                       
                         break;
-                    //Filtro por quantidade
+                        
                     case "Quantidade":
-                        Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
-                            new FiltroPorQuantidade(int.Parse(txtFiltro.Text))));
-                        lvwProdutos.ItemsSource = Produtos;
+                        if (int.TryParse(txtMinimo.Text, out int qntMinima) &&
+                            (int.TryParse(txtMinimo.Text, out int qntMax)))
+                        {
+                            Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
+                                new FiltroPreco(qntMinima, qntMax)));
+                            lvwProdutos.ItemsSource = Produtos;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Digite um valor válido!", "Filtro por Quantidade", 
+                                MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                         break;
-                    //Filtro por nome
                     case "Nome":
                         txtFiltro.Visibility = Visibility.Visible;
                         Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
@@ -112,7 +135,6 @@ namespace GerenciadorDeEstoque
                         lvwProdutos.ItemsSource = Produtos;
                         break;
                 }
-
             }
             else
             {

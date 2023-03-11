@@ -2,6 +2,7 @@
 using Sistema_de_Gerenciamento_de_Estoques;
 using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -16,9 +17,16 @@ namespace GerenciadorDeEstoque
             PreencherListView();
         }
 
+        public ListarProdutos(Produto produto)
+        {
+            InitializeComponent();            
+            Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
+                            new FiltroPorNome(produto.Nome)));
+            lvwProdutos.ItemsSource = Produtos;
+        }
+
         private void PreencherListView()
         {
-            //Preenche o ListView com os produtos que estão no banco de dados
             Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutos());
             lvwProdutos.ItemsSource = Produtos;
         }

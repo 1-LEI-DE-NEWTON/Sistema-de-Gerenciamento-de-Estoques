@@ -1,4 +1,5 @@
 ﻿using GerenciadorDeEstoques;
+using Sistema_de_Gerenciamento_de_Estoques;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -42,6 +43,12 @@ namespace GerenciadorDeEstoque
         {
             var listarProdutos = new ListarProdutos();
             listarProdutos.ShowDialog();
-        }       
+        }
+
+        private void BuscarProduto_Click(object sender, RoutedEventArgs e)
+        {
+            var buscarProdutos = new BuscarProdutos();
+            buscarProdutos.ShowDialog();
+        }
     }
 }

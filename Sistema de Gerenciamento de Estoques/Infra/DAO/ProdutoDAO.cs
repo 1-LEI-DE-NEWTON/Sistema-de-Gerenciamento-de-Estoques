@@ -36,7 +36,6 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
                         }
                     }
                 }
-
                 return produtos;
             }
             catch (Exception ex)
@@ -46,8 +45,7 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
                 return null;
             }
         }
-
-        //Listar Produtos com Filtro
+        
         public static List<Produto> ListarProdutosComFiltro(FiltroBase<Produto> filtro)
         {
             try
@@ -137,7 +135,6 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
         {
             try
             {
-                //Pesquisa um produto no banco de dados, com mesmo nome,quantidade e preço
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
@@ -156,8 +153,40 @@ namespace Sistema_de_Gerenciamento_de_Estoques.Infra.DAO
                             produto.Preco = reader.GetDecimal("preco");
                         }
                     }
-
                     return produto;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao buscar produto: " + ex.Message, "Erro",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+                return null;
+            }
+        }
+
+        public static Produto BuscarProdutoPorNome(string nome)
+        {
+            try
+            {
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM produtos WHERE nome = @nome", connection);
+                    command.Parameters.AddWithValue("@nome", nome);
+
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var produto = new Produto(
+                                reader.GetString("nome"),
+                                reader.GetInt32("quantidade"),
+                                reader.GetDecimal("preco"));
+
+                            return produto;
+                        }
+                    }
+                    return null;
                 }
             }
             catch (Exception ex)

@@ -1,4 +1,4 @@
-﻿<Page x:Class="GerenciadorDeEstoque.ListarProdutos"
+﻿<Window x:Class="GerenciadorDeEstoque.ListarProdutos"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -36,9 +36,9 @@
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <!--
+                                    
                                     <Button Content="Editar" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Editar_Click"/>
-                                    <Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
+                                    <!--Button Content="Excluir" Margin="5" Background="#007acc" Foreground="White" FontSize="14" Click="Excluir_Click"/>
                                     -->
                                 </StackPanel>
                             </DataTemplate>
@@ -48,4 +48,4 @@
             </ListView.View>
         </ListView>
     </Grid>
-</Page>
+</Window>

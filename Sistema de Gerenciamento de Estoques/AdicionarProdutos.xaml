@@ -56,6 +56,10 @@
 
                 <Style TargetType="Button">
                     <Style.Triggers>
+                        <DataTrigger Binding="{Binding Text, ElementName=txtNome}" Value="">
+                            <Setter Property="IsEnabled" Value="False" />
+                        </DataTrigger>
+
                         <DataTrigger Binding="{Binding Text, ElementName=txtQuantidade}" Value="">
                             <Setter Property="IsEnabled" Value="False" />
                         </DataTrigger>

@@ -37,7 +37,6 @@ namespace GerenciadorDeEstoque
         {
             var adicionarProdutos = new AdicionarProdutos();
             adicionarProdutos.ShowDialog();
-            //MessageBox.Show("Produto adicionado com sucesso!");
         }
 
         private void AtualizarProdutos(object sender, RoutedEventArgs e)
@@ -54,12 +53,10 @@ namespace GerenciadorDeEstoque
         }
         */
 
-        /*
-        private void ListarProdutos(object sender, RoutedEventArgs e)
+        private void ListarProdutos_Click(object sender, RoutedEventArgs e)
         {
-            var listarProdutosWindow = new ListarProdutosWindow(Produtos);
-            listarProdutosWindow.ShowDialog();
-        }
-        */
+            var listarProdutos = new ListarProdutos();
+            listarProdutos.ShowDialog();
+        }       
     }
 }

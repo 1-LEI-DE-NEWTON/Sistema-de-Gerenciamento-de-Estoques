@@ -80,3 +80,5 @@ C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gere
 C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
 C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\MySqlConnector.dll
 C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\EditorProdutos.g.cs
+C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\obj\Debug\net6.0-windows\EditorProdutos.baml

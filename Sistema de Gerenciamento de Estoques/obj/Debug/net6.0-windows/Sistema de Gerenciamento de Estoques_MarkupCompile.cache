@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\TKFir\source\repos\Sistema-de-Gerenciamento-de-Estoques\Sistema de Gerenciamento de Estoques\App.xaml
-3-1280421798
+41437718396
 
-19-1251295465
+20-615626259
 2161473753744
-AdicionarProdutos.xaml;ListarProdutos.xaml;MainWindow.xaml;
+AdicionarProdutos.xaml;EditorProdutos.xaml;ListarProdutos.xaml;MainWindow.xaml;
 
 False
 

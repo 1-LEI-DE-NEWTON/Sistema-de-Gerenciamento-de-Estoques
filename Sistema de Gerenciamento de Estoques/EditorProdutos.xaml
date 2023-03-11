@@ -17,15 +17,15 @@
 
         <Label Content="Nome:" Grid.Row="0" Margin="43,10,10,10" />
         <TextBox x:Name="txtNome" Grid.Row="0" Margin="87,10,10,10" 
-                Style="{StaticResource Estilo_Placeholder}" Tag="" />
+                Style="{StaticResource Estilo_Placeholder}" Tag="Digite o nome do produto" />
 
         <Label Content="Quantidade:" Grid.Row="1" Margin="10,10,10,10" />
         <TextBox x:Name="txtQuantidade" Grid.Row="1" Margin="87,10,10,10"
-                 Style="{StaticResource Estilo_Placeholder}" Tag="" />
+                 Style="{StaticResource Estilo_Placeholder}" Tag="Digite a quantidade do produto" />
 
         <Label Content="Preço:" Grid.Row="2" Margin="43,10,10,10" />
         <TextBox x:Name="txtPreco" Grid.Row="2" Margin="87,10,10,10"
-                Style="{StaticResource Estilo_Placeholder}" Tag="" />
+                Style="{StaticResource Estilo_Placeholder}" Tag="Digite o preço do produto" />
 
         <Button Content="Salvar" Grid.Row="3" Margin="222,10,44,-15" Click="Salvar_Click" Grid.RowSpan="2"
                 Background="#007ACC" Foreground="#FFFFFF" 

@@ -32,7 +32,7 @@ namespace GerenciadorDeEstoques
         {
             //Adiciona o produto na lista de produtos
             var produto = new Produto(txtNome.Text, int.Parse(txtQuantidade.Text), (decimal)double.Parse(txtPreco.Text));
-            models.AdicionarProduto(produto);
+          //models.AdicionarProduto(produto);
             //Adiciona o produto ao banco de dados
             ProdutoDAO.AdicionarProduto(produto);
             //Limpa os campos

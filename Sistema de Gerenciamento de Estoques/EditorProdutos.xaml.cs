@@ -9,9 +9,11 @@ namespace Sistema_de_Gerenciamento_de_Estoques
     /// </summary>
     public partial class EditorProdutos : Window
     {
+        private Produto produtoSelecionado;
         public EditorProdutos(Produto produtoSelecionado)
         {            
             InitializeComponent();
+            this.produtoSelecionado = produtoSelecionado;
             txtNome.Tag = produtoSelecionado.Nome;
             txtQuantidade.Tag = produtoSelecionado.Quantidade.ToString();
             txtPreco.Tag = produtoSelecionado.Preco.ToString();
@@ -19,9 +21,13 @@ namespace Sistema_de_Gerenciamento_de_Estoques
 
         private void Salvar_Click(object sender, RoutedEventArgs e)
         {
-            var produto = new Produto(txtNome.Text, int.Parse(txtQuantidade.Text), (decimal)double.Parse(txtPreco.Text));
+            produtoSelecionado = ProdutoDAO.BuscarProduto(produtoSelecionado);
+            
+            produtoSelecionado.Nome = txtNome.Text;
+            produtoSelecionado.Quantidade = int.Parse(txtQuantidade.Text);
+            produtoSelecionado.Preco = (decimal)double.Parse(txtPreco.Text);
             //Salva as alterações no banco de dados
-            ProdutoDAO.EditarProduto(produto);
+            ProdutoDAO.EditarProduto(produtoSelecionado);
             //Fecha a janela
             DialogResult = true;
         }

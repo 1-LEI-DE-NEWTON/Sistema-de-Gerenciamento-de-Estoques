@@ -1,9 +1,7 @@
 ﻿using GerenciadorDeEstoque.Filtros;
 using Sistema_de_Gerenciamento_de_Estoques;
 using Sistema_de_Gerenciamento_de_Estoques.Infra.DAO;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -127,6 +125,7 @@ namespace GerenciadorDeEstoque
                                 MessageBoxButton.OK, MessageBoxImage.Error);
                         }
                         break;
+
                     case "Nome":
                         txtFiltro.Visibility = Visibility.Visible;
                         Produtos = new ObservableCollection<Produto>(ProdutoDAO.ListarProdutosComFiltro(
